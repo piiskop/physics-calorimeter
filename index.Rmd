@@ -1,0 +1,33 @@
+--- 
+title: "Jõudude liitmine"
+author: 'peacecop kalmer:, Risto Koor'
+number: 1
+#date: "`r Sys.Date()`"
+date-work: "20220317"
+date-handing-over: "20220422"
+group: "MLLBk-1"
+site: bookdown::bookdown_site
+documentclass: article
+download: ["pdf"]
+bibliography: sample.bib
+description: |
+  This is a minimal example of using the bookdown package to write a book.
+  set in the _output.yml file.
+  The HTML output format for this example is bookdown::bs4_book,
+biblio-style: newapa
+geometry: left=3cm, right=3cm, top=2cm, bottom=2cm
+fontsize: 12pt
+mainfont: Latin Modern Roman
+sansfont: Arial
+monofont: Latin Modern Mono
+mathfont: Latin Modern Math
+linestretch: 1.5
+toc-depth: 5
+lof: yes
+lot: yes
+toc: yes
+classoption: twoside
+lang: et
+link-citations: yes
+#subtitle: LABORATOORNE TÖÖ 1
+---

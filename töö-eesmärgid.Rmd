@@ -1,0 +1,11 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+
+# Töö eesmärgid
+
+1.  Õppida opereerima jõudude näitlike kujutistega.
+
+2.  Uurida katseliselt jõudude kui vektorite liitmist.

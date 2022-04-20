@@ -1,0 +1,23 @@
+bookdown::bs4_book:
+  css: bs4_style.css
+  theme:
+    primary: "#096B72"
+  repo: https://github.com/piiskop/physics-joining-forces
+bookdown::pdf_book:
+  latex_engine: xelatex
+  #citation_package: natbib
+  keep_tex: yes
+  template: template.tex
+  extra_dependencies: ["float", "flafter"]
+  fig_caption: yes
+bookdown::epub_book: default
+bookdown::word_document2:
+  always_allow_html: true
+  template: template.tex
+pdf_document:
+  template: template.tex
+  pandoc_args: [
+      "-r", "markdown-auto_identifiers"
+      ]
+  number_sections: false
+  extra_dependencies: ["float"]
