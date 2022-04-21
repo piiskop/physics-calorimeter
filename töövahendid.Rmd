@@ -1,21 +1,23 @@
-# Töö vahendid
+# TÖÖVAHENDID
 
-1.  Kaks dünamomeetrit,
+1.  Kalorimeeter,
 
-2.  tugev nöör,
+2.  termomeeter (-10°C kuni 100°C) või Pasco termosensor - kasutasime
+    mõlemat,
 
-3.  raudvarb,
+3.  elektroonilised kaalud - kasutasime üht,
 
-4.  koormiste komplekt,
+4.  mõõteklaas,
 
-5.  vineertahvel,
+5.  külm vesi (kraanist),
 
-6.  mõõtejoonlaud,
+6.  soe vesi (30°C kuni 40°C),
 
-7.  mall,
+7.  keedukann,
 
-8.  sirkel,
+8.  jäätükid,
 
-9.  valgusallikas (taskulamp vms) - meie ei kasutanud valgusallikat,
+9.  vett imav paber,
 
-10. viltpliiats või marker - meie ei kasutanud.
+10. termoisoleeriv alus.
+

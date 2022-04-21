@@ -1,11 +1,7 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
+# TÖÖ EESMÄRGID
 
-# Töö eesmärgid
+1.  Õppida tundma kalorimeetri ehitust ja kalorimeetriliste mõõtmiste
+    põhimõtteid.
 
-1.  Õppida opereerima jõudude näitlike kujutistega.
+2.  Määrata jää sulamissoojus kalorimeetrilisel meetodil.
 
-2.  Uurida katseliselt jõudude kui vektorite liitmist.

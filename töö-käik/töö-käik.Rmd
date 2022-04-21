@@ -1,6 +1,122 @@
 # Töö käik
 
-## Teoreetilised alused
+## Kalorimeetri efektiivse soojusmahtuvuse *K* määramine {#work-1}
+```{=tex}
+\begin{enumerate}
+    \item
+```
+Tutvusime kalorimeetri ehitusega ja joonistasin selle skeemi
+    *\@ref(fig:calorimeter)* aruandesse.
+
+```{=tex}
+    \item
+```
+
+Soojusliku tasakaalu võrrandi koostamisel tuleb arvestada, et osa
+    soojust läheb (või võetakse) kalorimeetri anuma, segaja ja
+    termomeetri soojenemiseks algtemperatuurist lõpp-temperatuurini.
+    Selleks kõigeks vajaliku soojusmahtuvuse arvutamine on keeruline ja
+    seepärast tuleb eelistada eksperimentaalset määramist. Kasutatakse
+    segamismeetodit, mis seisneb järgmises:
+
+```{=tex}
+\begin{enumerate}[label*=\arabic*.]
+	\item 
+```
+
+Valasime kalorimeetrisse teatud hulga külma vett massiga $m_k$ (umbes ühe liitri). NB!
+    Soovitatav on esmalt kaaluda anum ja selle mass fikseerida
+    protokollis. Seejärel valasime külma vee anumasse ning mõõtsime
+    kogumassi ja selle kaudu külma vee massi $m_k$. Seejärel asetasime
+    anuma kalorimeetrisse. Paigaldasime segaja ja termomeetri ning
+    sulgesime kalorimeetri kaanega. Lasksime mõnda aega seista, et
+    toimuks soojusvahetus.
+```{=tex}
+\item[]
+```
+
+Fikseerisime kalorimeetri anumas oleva vedeliku temperatuuri $T_k$.
+
+```{=tex}
+\item 
+```
+
+Tegelesime sooja vee ettevalmistamisega. Selleks soojendasime ligikaudu ühe liitri vett keedukannus. Valasime mõõteklaasi mingi
+    koguse sooja vett. NB! Fikseerisime protokollis sooja vee massi
+    $m_s$. Vahetult enne sooja vee valamist kalorimeetri sisemisse
+    anumasse mõõtsime ja protokollisime selle temperatuuri $T_s$.
+    Järgisime temperatuuri mõõtmise reegleid. Mõõtsime temperatuuri
+    vähemalt kahe minuti kestel erinevatel kõrgustel vedelikus, võtsime
+    keskmise väärtuse ja protokollisime selle.
+
+```{=tex}
+\item{}
+```
+
+Pärast sooja vee valamist kalorimeetrisse segasime seda ettevaatlikult segistiga. NB! Kalorimeetrianumas vett segades olime
+    ettevaatlikud, et segaja ei liiguks vastu termomeetrit. Seejärel
+    fikseerisime protokollis segu temperatuuri *T*.
+```{=tex}
+\end{enumerate}
+
+\item
+```
+
+Sooja vee poolt äraantud soojushulk peab võrduma külma vee poolt saadud soojushulgaga ja kalorimeetrile äraantud efektiivse soojushulga summaga:
+
+```{=tex}
+\begin{equation}
+c \cdot m_s \cdot (T_s - T) = c \cdot m_k \cdot (T - T_k) + K \cdot (T - T_k),
+(\#eq:cmt)
+\end{equation}
+```
+millest saame kalorimeetri efektiivse soojusmahtuvuse
+```{=tex}
+\begin{equation}
+K = c \cdot (m_s \cdot \frac{T_s - T}{T - T_k} - m_k).
+(\#eq:k)
+\end{equation}
+\item
+```
+Fikseeritud mõõtmistulemuste ja seose *\@ref(eq:k)* järgi leidsime kalorimeetri efektiivse soojusmahtuvuse *K*.
+```{=tex}
+\item
+```
+Seega *K* määramiseks tuli mõõta:
+```{=tex}
+\TabPositions{5cm}
+%\NumTabs{2}
+\begin{enumerate}[label*=\arabic*.]
+
+\item sooja vee mass \tab $m_s = \dotfill \cdot kg$; \tab
+\item külma vee mass \tab $m_k = \dotfill \cdot kg$; \tab
+\item sooja vee temperatuur \tab $T_s = \dotfill \cdot K$; \tab
+\item külma vee temperatuur \tab $T_k = \dotfill \cdot K$; \tab
+\item segu temperatuur \tab $T = \dotfill \cdot K$. \tab
+\end{enumerate}
+\end{enumerate}
+```
+Vee erisoojuse keskmine väärtus on: $c = 4190 \cdot \frac{J}{Kg \cdot K}$.
+
+## JÄÄ SULAMISSOOJUSE LEIDMINE
+
+1. Määrasime järgnevalt katseliselt jää sulamissoojuse.
+
+2. Kalorimeetris oli vajalik vesi juba olemas laboratoorse [töö esimesest osast](#work-1) (kalorimeetri efektiivse soojusmahtuvuse määramine). Kogu vedeliku mass on teada (NB! Kui jääd ei saa või ei taheta kaaluda, siis on protokollitud anuma mass, külma vee mass ja sinna lisatud sooja vee mass). Lisatud jääkoguse massi saab kindlaks määrata ka katse lõpus, kui kaaluda kogu anumas olnud vedeliku kogus ja lahutada lõpp-massist eelpool mainitud (anuma, külma vee ja sooja vee massid). Seega kogu vedeliku mass kalorimeetri anumas on võrdne $\\ m_v = m_k + m_s = \dotfill \cdot kg$. Enne mõõtmisi võib kontrolliks siiski kaaluda üle kalorimeetri koos veega ning kontrollida, kas vee kogumass on võrdne arvutatud kuuma ja külma vee masside summaga. {#work-2-2}
+
+3. Eelnevast on teada ka kogu segu temperatuur $T_1 = T = \dotfill \cdot K$. NB! Kontrollisime, ega segu temperatuur ei olnud vahepeal muutunud. Juhul, kui see oli nii, siis fikseerisime uue näidu protokollis.
+
+4. Asetasime suured jäätükid vett imavale paberile, mille alla oli asetatud termoisoleeriv aine (kork, vahtkumm vms). Jäätükid kuivatasime paberiga ja lasksime paberi abil (mitte käega!) kalorimeetris olevasse vette.
+
+5. Vett kalorimeetris hakatakse pidevalt segama, kuni kogu jää on sulanud ja sellest tekkinud vesi segunenud. Seda näitab termomeeter, mille abil fikseeritakse minimaalse temperatuuri näit, mis ongi lõpptemperatuuriks $T_L$.
+
+6. Edasi eraldasime ettevaatlikult kalorimeetrist termomeetri ja segaja nii, et nendega kaanevad veetilgad kalorimeetrisse tagasi langesid (raputasime kergelt). Siis võtsime kalorimeetrist välja sisemise anuma veega ja mõõtsime võimalikult täpselt selles oleva vee koguse mõõteklaasi abil ja/ või kaalude abil. Leidsime jää sulamisest tekkinud vee massi $m_{jää}$. (Või toimisime nii, nagu [punktis *2*](#work-2-2) kirjeldatud.)
+
+7.  Arvutasime jää sulamissoojuse $\lambda_{eks}$. Võrdlesime seda teatmikes antuga ja leidsime suhtelise erinevuse:
+
+    $$R = \frac{|\lambda_{akts} - \lambda{eks}|}{\lambda_{eks}} \cdot 100\%.$$
+    
+    Hindasime katse läbiviimise korrektsust ning tulemuste täpsust.
 
 Kuna jõud on vektoriaalne suurus, siis on jõul nii väärtus kui suund.
 Vektoreid saab liita. Sihitisele mõjuva koondjõu vektor on sellele

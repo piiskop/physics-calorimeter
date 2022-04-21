@@ -1,10 +1,10 @@
---- 
-title: "Jõudude liitmine"
+---
+title: "Kalorimeetrilised mõõtmised"
 author: 'peacecop kalmer:, Risto Koor'
-number: 1
+number: 3
 #date: "`r Sys.Date()`"
-date-work: "20220317"
-date-handing-over: "20220422"
+date-work: "20220324"
+date-handing-over: "20220421"
 group: "MLLBk-1"
 site: bookdown::bookdown_site
 documentclass: article

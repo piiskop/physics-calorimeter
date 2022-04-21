@@ -27,7 +27,7 @@
 \usepackage{csquotes}
 %\addbibresource{sample.bib} % Bibliography file (located in the same folder as the template)
 \titleformat*{\section}{\LARGE\sffamily\bfseries}
-\titleformat*{\subsection}{\Large\sffamily\bfseries}
+\titleformat*{\subsection}{\Large\sffamily\bfseries\hyphenchar\font=-1}
 \titleformat*{\subsubsection}{\large\sffamily\bfseries\hyphenchar\font=-1}
 %----------------------------------------------------------------------------------------
 %	REPORT INFORMATION
@@ -79,15 +79,18 @@ $endif$
 \textbf{\textsf{FÜÜSIKA LABORATOORNE TÖÖ}} \\
 \end{center}
 \vspace{1cm}
-\renewcommand{\arraystretch}{2}
+\renewcommand{\arraystretch}{1}
 \setlength\arrayrulewidth{1pt}
-\begin{tabular}{|m{0.2\textwidth}|m{0.2\textwidth}|m{0.6\textwidth}|}
+\begin{tabular}{|m{0.16\textwidth}|m{0.43\textwidth}|m{0.41\textwidth}|}
 \hline
-    \multicolumn{2}{|m{0.4\textwidth}|}{\textbf{Õpperühm} $group$} & {\textbf{Nimi} $author$}  \\ \cline{1-3}
-    \multicolumn{2}{|m{0.4\textwidth}|}{\raggedright\textbf{Töö sooritamise kuupäev:} $date-work$} & {\textbf{Vastutav õppejõud:}} \\ \cline{1-3}
-    \multicolumn{2}{|m{0.4\textwidth}|}{\raggedright\textbf{Töö esitamise kuupäev:} $date-handing-over$} & {\textbf{Tulemus:}} \\ \cline{1-2}
-    \multicolumn{2}{|m{0.4\textwidth}|}{\textbf{Töö kaitsmise kuupäev:} } & \\ \cline{1-3}
-    {\textbf{Töö nr.} $number$} & \multicolumn{2}{|m{0.8\textwidth}|}{\textbf{Töö pealkiri} \LARGE{$title$}} \\ \hline
+    {\textbf{Õpperühm:} $group$} & \multicolumn{2}{|m{0.84\textwidth}|}{\textbf{Nimi:} $author$}  \\ \cline{1-3}
+    \multicolumn{2}{|m{0.59\textwidth}|}{\raggedright\textbf{Töö sooritamise kuupäev:} $date-work$} & {\textbf{Vastutav õppejõud:}} \\ \cline{1-2}
+    \multicolumn{2}{|m{0.59\textwidth}|}{\raggedright\textbf{Töö kaitsmise kuupäev:} $date-handing-over$} & \\
+    \multicolumn{2}{|m{0.59\textwidth}|}{\textbf{Tulemus:} } & \\
+    \multicolumn{2}{|m{0.59\textwidth}|}{} & \\
+    \multicolumn{2}{|m{.59\textwidth}|}{} & \\ \hline
+    {\textbf{Töö nr:} $number$} & \multicolumn{2}{|m{0.84\textwidth}|}{\textbf{Töö pealkiri:}} \\
+    {} & \multicolumn{2}{|m{0.84\textwidth}|}{\textbf{$title$}} \\ \hline
 \end{tabular}
 %\maketitle % Insert the title, author and date using the information specified above
 \begin{comment}

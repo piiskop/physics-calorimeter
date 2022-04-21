@@ -33,7 +33,8 @@
 \usepackage{subcaption}
 \usepackage{enumitem} % Required for list customization
 \setlist{partopsep=0pt, topsep=0pt} % Customize spacing around and inside lists
-\renewcommand{\labelenumi}{\alph{enumi}.} % Change numbering in the enumerate environment by letter rather than number
+%\renewcommand{\labelenumi}{\alph{enumi}.} % Change numbering in the enumerate environment by letter rather than number
+\usepackage{tabto}
 
 \setlength{\parindent}{0pt} % Suppress paragraph indentation
 

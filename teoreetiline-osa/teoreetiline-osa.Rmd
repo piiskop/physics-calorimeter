@@ -1,0 +1,101 @@
+# TEOREETILINE OSA
+
+Kalorimeetria on füüsika haru, mis tegeleb soojushulkade mõõtmisega.
+Kalorimeetriliselt määratakse ainete erisoojust, sulamissoojust,
+siirdesoojust, keemiliste reaktsioonide soojusefekte,
+elektromagnetkiirguse energiat jm. Mõõtmiseks kasutatakse
+kalorimeetreid, mille töö põhineb ühelt kehalt teisele kanduva
+soojushulga mõõtmisel. Seejuures lähtutakse soojusliku tasakaalu
+võrrandist: ühe keha või aine poolt ära antav soojushulk $Q_1$ võrdub
+teise keha või aine (tavaliselt vee) poolt vastuvõetava soojushulgaga
+$Q_2$. Võrdus $Q_1 = Q_2$ on kehtiv ainult siis, ku isoojusvahetust
+kalorimeetrit ümbritseva keskkonnaga ei toimu. Kalorimeetrites ongi
+soojusvahetus ümbritseva keskkonnaga püütud viia miinimumini. Sellest ka
+kalorimeetri eriline konstruktsioon (\@ref(fig:calorimeter)).
+Kalorimeetri sisemine anum (*1*) asub ühe või mitme anuma (*2*) ja (*3*)
+sees ja on pealt suletav kaanega (*4*). Sisemine anum asub vildist või
+korgist alusel *5* ja on läikiva pinnaga. Kalorimeetri anumas oleva
+vedeliku temperatuuri mõõtmiseks kasutatakse termomeetrit (*6*) ja
+temperatuuri ühtlustamiseks kogu vedeliku ulatuses segajat (*7*).
+Täppismõõtmises täidetakse anumate *2* ja *3* vaheline ruum veel
+toatemperatuuril oleva veega, mille hilisemat temperatuuri muutust
+samuti arvestatakse.
+
+```{r calorimeter, fig.cap = "Kalorimeetri ehituse skeem. Tähiste selgitused on toodud töö üldtekstis.", fig.margin = TRUE}
+include_svg("teoreetiline-osa/calorimeter.svg")
+```
+
+Soojushulka $\lambda$, mis on vajalik ühe kilogrammi kristallilise aine
+muutmiseks vedelikuks sulamistemperatuuril, nimetatakse selle aine
+$\underline{sulamissoojuseks}$. Et sulatada kristalliline keha massiga
+*m*, tuleb anda sellele soojushulk:
+
+```{=tex}
+\begin{equation}
+Q_1 = \lambda \cdot m
+(\#eq:heat-of-fusion)
+\end{equation}
+```
+Kui lasta jäätükke massiga $m_{jää}$ kalorimeetri anumas olevasse vette,
+siis sulamiseks vajalik energia võetakse ümbritsevalt veelt ja
+kalorimeetri anumalt. Jää sulatamisel saadakse algul null-kraadine (°C)
+vesi, mille temperatuur ühtlustub lõpuks kalorimeetris oleva vee
+temperatuuriga $T_L$. Soojusliku tasakaaluvõrrandi saame järgmise
+arutluse teel.
+
+Soojushulk $Q_1$, mis on vajalik $m_{jää}$ (kg) jää sulatamiseks, on
+leitav seosest \@ref(eq:heat-of-fusion), kus $\lambda$ on jää
+sulamissoojus. Soojushulk, mis on vajalik $m_{jää}$ (kg) jääst tekkinud
+vee soojendamiseks kuni kalorimeetris oleva vee lõpptemperatuurni $T_L$,
+on:
+
+```{=tex}
+\begin{equation}
+Q_2 = c \cdot m_{jää} \cdot (T_L - T_0),
+(\#eq:heat-2)
+\end{equation}
+```
+kus $T_0 = 273.15 \cdot K$ ja $c = 4190 \cdot \frac{J}{Kg \cdot K}$ on
+vee erisoojus. Soojushulgad $Q_3$ ja $Q_4$ saadakse järgmiste seoste
+abil. $Q_3$ on soojushulk, mis tuleb kalorimeetris olevalt veelt massiga
+$m_v$, mis jahtub algtemperatuurilt $T_1$ lõpp-temperatuurini $T_L$ ehk:
+
+```{=tex}
+\begin{equation}
+Q_3 = c \cdot m_{v} \cdot (T_1 - T_L),
+(\#eq:heat-3)
+\end{equation}
+```
+$Q_4$ on kalorimeetri anumalt tulev soojushulk:
+
+```{=tex}
+\begin{equation}
+Q_4 = K \cdot (T_1 - T_L),
+(\#eq:heat-4)
+\end{equation}
+```
+kus *K* on kalorimeetri soojusmahtuvus. Kui soojuskadusid ei arvestata,
+siis
+
+```{=tex}
+\begin{equation}
+Q_1 + Q_2 = Q_3 + Q_4
+(\#eq:sum-of-heat)
+\end{equation}
+```
+ehk
+
+```{=tex}
+\begin{equation}
+\lambda \cdot m_{jää} + c \cdot m_{jää} \cdot (T_L - T_0) = c \cdot m_{v} \cdot (T_1 - T_L) + K \cdot (T_1 - T_L),
+(\#eq:sum-of-heat-expanded)
+\end{equation}
+```
+millest saame
+
+```{=tex}
+\begin{equation}
+\lambda = \frac{c \cdot m_{v} \cdot (T_1 - T_L) + K \cdot (T_1 - T_L)}{m_{jää}}.
+(\#eq:heat-of-ice)
+\end{equation}
+```
