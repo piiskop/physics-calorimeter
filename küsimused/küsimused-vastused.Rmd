@@ -1,0 +1,17 @@
+# Vastused küsimustele
+
+1.  **Mida nimetatakse soojushulgaks ja mida see endast kujutab energeetilisest küljest?**
+
+    Soojushulgaks nimetatakse ülekantavat energiakogust [@heat-conduction].
+
+2.  **Kuidas arvutada soojushulka ja mis on selle mõõtühikuks?**
+
+    Soojushulka arvutatakse erinevalt faasisisese energiakonverteerimise ja faasimuutuse kohta. Faasisiseselt korrutatakse sulamis- või aurustumissoojus massiga, faasimuutuse puhul erisoojus ka temperatuurimuuduga. Mõõtühikuks on üks džaul.
+
+3.  **Mis on sulamissoojus ja mida näitab sulamisssoojuse arvuline väärtus?**
+
+    Sulamissoojus on energiahulk, mis kandub üle sulamisprotsessis või külmumisprotsessis. Sulamissoojuse arvuline väärtus näitab, kui palju soojust on sulatamiseks või külmutamiseks vaja ning kas tegemist on sulatamise või külmutamisega.
+
+4.  **Mis põhjustas meie poolt sooritatud katsetes tõenäoliselt kõige suuremaid vigu?**
+
+    Kannust ei väljunud vesi täielikult vaid mõni tilk jäi selle külge. Sama probleem oli segajaga. Samuti muutis termomeetri eemaldamine vee massi. Ja kalorimeeter ei pruukinud ka liiga hästi isoleerida.

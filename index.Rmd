@@ -4,7 +4,7 @@ author: 'peacecop kalmer:, Risto Koor'
 number: 3
 #date: "`r Sys.Date()`"
 date-work: "20220324"
-date-handing-over: "20220421"
+date-handing-over: "20220428"
 group: "MLLBk-1"
 site: bookdown::bookdown_site
 documentclass: article
@@ -24,7 +24,7 @@ mathfont: Latin Modern Math
 linestretch: 1.5
 toc-depth: 5
 lof: yes
-lot: yes
+lot: false
 toc: yes
 classoption: twoside
 lang: et

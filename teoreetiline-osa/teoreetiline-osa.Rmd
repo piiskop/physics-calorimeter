@@ -11,7 +11,7 @@ teise keha või aine (tavaliselt vee) poolt vastuvõetava soojushulgaga
 $Q_2$. Võrdus $Q_1 = Q_2$ on kehtiv ainult siis, ku isoojusvahetust
 kalorimeetrit ümbritseva keskkonnaga ei toimu. Kalorimeetrites ongi
 soojusvahetus ümbritseva keskkonnaga püütud viia miinimumini. Sellest ka
-kalorimeetri eriline konstruktsioon (\@ref(fig:calorimeter)).
+kalorimeetri eriline konstruktsioon (joonis *\@ref(fig:calorimeter)*).
 Kalorimeetri sisemine anum (*1*) asub ühe või mitme anuma (*2*) ja (*3*)
 sees ja on pealt suletav kaanega (*4*). Sisemine anum asub vildist või
 korgist alusel *5* ja on läikiva pinnaga. Kalorimeetri anumas oleva
@@ -44,7 +44,7 @@ temperatuuriga $T_L$. Soojusliku tasakaaluvõrrandi saame järgmise
 arutluse teel.
 
 Soojushulk $Q_1$, mis on vajalik $m_{jää}$ (kg) jää sulatamiseks, on
-leitav seosest \@ref(eq:heat-of-fusion), kus $\lambda$ on jää
+leitav seosest *\@ref(eq:heat-of-fusion)*, kus $\lambda$ on jää
 sulamissoojus. Soojushulk, mis on vajalik $m_{jää}$ (kg) jääst tekkinud
 vee soojendamiseks kuni kalorimeetris oleva vee lõpptemperatuurni $T_L$,
 on:
