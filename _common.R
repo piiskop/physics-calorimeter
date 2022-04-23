@@ -20,5 +20,9 @@ include_svg = function(path) {
   }
   knitr::include_graphics(output)
 }
-
-g <- 9.8182
+celsius_to_kelvin = function(celsius) {
+  celsius + 2.7315e2
+}
+SPECIFIC_HEAT_CAPACITY_OF_WATER <- 4.0939e3
+HEAT_OF_FUSION_OF_ICE <- 3.335E5
+TEMPERATURE_OF_FUSION_OF_ICE <- 2.7315E2

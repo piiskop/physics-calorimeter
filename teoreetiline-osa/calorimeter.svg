@@ -25,8 +25,8 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="2"
-     inkscape:cx="160.5"
-     inkscape:cy="376.25"
+     inkscape:cx="158.25"
+     inkscape:cy="216.75"
      inkscape:window-width="1920"
      inkscape:window-height="1147"
      inkscape:window-x="1920"
@@ -43,10 +43,10 @@
      id="defs811">
     <marker
        style="overflow:visible"
-       id="Arrow2"
+       id="marker7178"
        refX="0"
        refY="0"
-       orient="auto-start-reverse"
+       orient="auto"
        inkscape:stockid="Arrow2"
        markerWidth="7.6999998"
        markerHeight="5.5999999"
@@ -58,7 +58,7 @@
          transform="scale(0.7)"
          d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
          style="fill:context-stroke;fill-rule:evenodd;stroke:none"
-         id="arrow2L" />
+         id="path7176" />
     </marker>
   </defs>
   <g
@@ -227,7 +227,7 @@
        d="m -86.602893,-104.19262 a 0.26601669,1.0765792 0 0 1 0.266017,-1.07658 0.26601669,1.0765792 0 0 1 0.266017,1.07658"
        transform="scale(-1)" />
     <path
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.353;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2)"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.353;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7178)"
        d="M 83.831482,85.850187 V 99.075839"
        id="path2704" />
     <rect

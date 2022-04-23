@@ -1,6 +1,6 @@
-# Töö käik
+# TÖÖ KÄIK
 
-## Kalorimeetri efektiivse soojusmahtuvuse *K* määramine {#work-1}
+## KALORIMEETRI EFEKTIIVSE SOOJUSMAHTUVUSE *K* MÄÄRAMINE {#work-1}
 ```{=tex}
 \begin{enumerate}
     \item
@@ -31,6 +31,11 @@ Valasime kalorimeetrisse teatud hulga külma vett massiga $m_k$ (umbes ühe liit
     anuma kalorimeetrisse. Paigaldasime segaja ja termomeetri ning
     sulgesime kalorimeetri kaanega. Lasksime mõnda aega seista, et
     toimuks soojusvahetus.
+
+```{r first-experiment-m-beaker, attr.source = ".numberLines"}
+m_beaker <- 5.122e-1
+```
+
 ```{=tex}
 \item[]
 ```
@@ -88,213 +93,98 @@ Seega *K* määramiseks tuli mõõta:
 %\NumTabs{2}
 \begin{enumerate}[label*=\arabic*.]
 
-\item sooja vee mass \tab $m_s = \dotfill \cdot kg$; \tab
-\item külma vee mass \tab $m_k = \dotfill \cdot kg$; \tab
-\item sooja vee temperatuur \tab $T_s = \dotfill \cdot K$; \tab
-\item külma vee temperatuur \tab $T_k = \dotfill \cdot K$; \tab
-\item segu temperatuur \tab $T = \dotfill \cdot K$. \tab
+\item sooja vee mass \tab $m_s = 9.455 \cdot 10^{-1} \cdot kg$; \tab
+```
+
+```{r first-experiment-ms, attr.source = ".numberLines"}
+m_s <- 9.455e-1
+```
+
+```{=tex}
+\item külma vee mass \tab $m_k = 9.543 \cdot 10^{-1} \cdot kg$; \tab
+```
+
+```{r first-experiment-mk, attr.source = ".numberLines"}
+m_k <- 9.543e-1
+```
+
+```{=tex}
+\item sooja vee temperatuur \tab $T_s = 3.6815 \cdot 10^2 \cdot K$ $((9.5 \cdot 10)\celsius)$; \tab
+```
+
+```{r first-experiment-ts, attr.source = ".numberLines"}
+t_s <- 3.6815e2
+```
+
+```{=tex}
+\item külma vee temperatuur \tab $T_k = 2.9355 \cdot 10^2 \cdot K$; \tab
+```
+
+```{r first-experiment-tk, attr.source = ".numberLines"}
+t_k <- 2.9355e2
+```
+
+```{=tex}
+\item segu temperatuur \tab $T = 3.2875 \cdot 10^2 \cdot K$ $((5.56 \cdot 10)\celsius)$. \tab
+```
+
+```{r first-experiment-t, attr.source = ".numberLines"}
+t <- 3.2875e2
+```
+
+```{=tex}
 \end{enumerate}
 \end{enumerate}
 ```
-Vee erisoojuse keskmine väärtus on: $c = 4190 \cdot \frac{J}{Kg \cdot K}$.
+
+Vee erisoojuse keskmine väärtus on: $c = 4190 \cdot \frac{J}{Kg \cdot K}$. mina kasutasin väärtust $`r SPECIFIC_HEAT_CAPACITY_OF_WATER` \cdot\nobreak\frac{J}{Kg \cdot K}$, mis on välja mõõdetud eksperimentaalselt $293.15 \cdot K$ juures [@LOURENCO2006970].
+
+```{r first-experiment-k, attr.source = ".numberLines"}
+k <- SPECIFIC_HEAT_CAPACITY_OF_WATER * (m_s * (t_s - t) / (t - t_k) - m_k)
+```
+
+Kalorimeetri tõhus soojusmahtuvus oli järelikult $`r signif(k, digits = 6)` \cdot \frac{J}{K}$.
 
 ## JÄÄ SULAMISSOOJUSE LEIDMINE
 
 1. Määrasime järgnevalt katseliselt jää sulamissoojuse.
 
-2. Kalorimeetris oli vajalik vesi juba olemas laboratoorse [töö esimesest osast](#work-1) (kalorimeetri efektiivse soojusmahtuvuse määramine). Kogu vedeliku mass on teada (NB! Kui jääd ei saa või ei taheta kaaluda, siis on protokollitud anuma mass, külma vee mass ja sinna lisatud sooja vee mass). Lisatud jääkoguse massi saab kindlaks määrata ka katse lõpus, kui kaaluda kogu anumas olnud vedeliku kogus ja lahutada lõpp-massist eelpool mainitud (anuma, külma vee ja sooja vee massid). Seega kogu vedeliku mass kalorimeetri anumas on võrdne $\\ m_v = m_k + m_s = \dotfill \cdot kg$. Enne mõõtmisi võib kontrolliks siiski kaaluda üle kalorimeetri koos veega ning kontrollida, kas vee kogumass on võrdne arvutatud kuuma ja külma vee masside summaga. {#work-2-2}
+2.  Kalorimeetris oli vajalik vesi juba olemas laboratoorse [töö esimesest osast](#work-1) (kalorimeetri efektiivse soojusmahtuvuse määramine). Kogu vedeliku mass on teada (NB! Kui jääd ei saa või ei taheta kaaluda, siis on protokollitud anuma mass, külma vee mass ja sinna lisatud sooja vee mass). Lisatud jääkoguse massi saab kindlaks määrata ka katse lõpus, kui kaaluda kogu anumas olnud vedeliku kogus ja lahutada lõpp-massist eelpool mainitud (anuma, külma vee ja sooja vee massid). Seega kogu vedeliku mass kalorimeetri anumas on võrdne $\\ m_v = m_k + m_s = `r m_k + m_s` \cdot kg$. Enne mõõtmisi võib kontrolliks siiski kaaluda üle kalorimeetri koos veega ning kontrollida, kas vee kogumass on võrdne arvutatud kuuma ja külma vee masside summaga.
 
-3. Eelnevast on teada ka kogu segu temperatuur $T_1 = T = \dotfill \cdot K$. NB! Kontrollisime, ega segu temperatuur ei olnud vahepeal muutunud. Juhul, kui see oli nii, siis fikseerisime uue näidu protokollis.
+    ```{r second-experiment-mv, attr.source = ".numberLines"}
+    m_v <- m_k + m_s
+    ```
+
+3. Eelnevast on teada ka kogu segu temperatuur $T_1 \neq T = (5.1 \cdot 10) \celsius = `r celsius_to_kelvin(5.1e1)` \cdot K$. NB! Kontrollisime, ega segu temperatuur ei olnud vahepeal muutunud. Juhul, kui see oli nii, siis fikseerisime uue näidu protokollis. See oli nii.
+
+    ```{r second-experiment-t1, attr.source = ".numberLines"}
+    t_1 <- celsius_to_kelvin(5.1e1)
+    ```
 
 4. Asetasime suured jäätükid vett imavale paberile, mille alla oli asetatud termoisoleeriv aine (kork, vahtkumm vms). Jäätükid kuivatasime paberiga ja lasksime paberi abil (mitte käega!) kalorimeetris olevasse vette.
 
 5. Vett kalorimeetris hakatakse pidevalt segama, kuni kogu jää on sulanud ja sellest tekkinud vesi segunenud. Seda näitab termomeeter, mille abil fikseeritakse minimaalse temperatuuri näit, mis ongi lõpptemperatuuriks $T_L$.
 
-6. Edasi eraldasime ettevaatlikult kalorimeetrist termomeetri ja segaja nii, et nendega kaanevad veetilgad kalorimeetrisse tagasi langesid (raputasime kergelt). Siis võtsime kalorimeetrist välja sisemise anuma veega ja mõõtsime võimalikult täpselt selles oleva vee koguse mõõteklaasi abil ja/ või kaalude abil. Leidsime jää sulamisest tekkinud vee massi $m_{jää}$. (Või toimisime nii, nagu [punktis *2*](#work-2-2) kirjeldatud.)
+    ```{r second-experiment-tl, attr.source = ".numberLines"}
+    t_l <- celsius_to_kelvin(4.2e1)
+    ```
+
+6. Edasi eraldasime ettevaatlikult kalorimeetrist termomeetri ja segaja nii, et nendega kaanevad veetilgad kalorimeetrisse tagasi langesid (raputasime kergelt). Siis võtsime kalorimeetrist välja sisemise anuma veega ja mõõtsime võimalikult täpselt selles oleva vee koguse mõõteklaasi abil ja/ või kaalude abil. Leidsime jää sulamisest tekkinud vee massi $m_{jää}$. (Või toimisime nii, nagu punktis *2* kirjeldatud. Toimisime nii.)
+
+    ```{r second-experiment-m-ice, attr.source = ".numberLines"}
+    m_ice <- 2.5499 - m_v - m_beaker
+    ```
 
 7.  Arvutasime jää sulamissoojuse $\lambda_{eks}$. Võrdlesime seda teatmikes antuga ja leidsime suhtelise erinevuse:
 
     $$R = \frac{|\lambda_{akts} - \lambda{eks}|}{\lambda_{eks}} \cdot 100\%.$$
     
-    Hindasime katse läbiviimise korrektsust ning tulemuste täpsust.
+    Jää sulamissoojuseks arvestasin $`r HEAT_OF_FUSION_OF_ICE` \cdot \frac{J}{kg}$ [@ASAOKA20101533].
 
-Kuna jõud on vektoriaalne suurus, siis on jõul nii väärtus kui suund.
-Vektoreid saab liita. Sihitisele mõjuva koondjõu vektor on sellele
-sihitisele mõjuvate jõudude vektorite summa. Kui ese on taustsüsteemi
-suhtes paigal, siis on sellele esemele selles taustsüsteemis mõjuvate
-jõudude summa null. Kui jõud mõjuvad samasihiliselt, on nende vektoreid
-lihtne liita: tuleb need vaid nihutada samale sirgele niimoodi, et iga
-järgmise jõu vektori alguspunkt ühtib eelmise jõu vektori lõpppunktiga.
-Selleks ei pea vektorid isegi mitte samasihilised olema.
-
-Siinses töös käsitleme vektoreid tasandil. Kui vektorid on üksteisega
-risti, saab nende resultantvektori pikkuse arvutada Pythagorase teoreemi
-abil. Kui vektorid pole üksteisega risti, siis kui on teada nende
-ühendatud kahe vektori vaheline nurk, saab kasutada resultantvektori
-pikkuse arvutamiseks koossinusteoreemi. Eks Pythagorase teoreem olegi
-koossinusteoreemi erijuht! Seetõttu esitan siinkohal koossinusteoreemi
-(\@ref(thm:koossiinusteoreem)):
-
-```{theorem koossiinusteoreem, name="Koossiinusteoreem"}
-Kolmnurga külje pikkus on võrdne ruutjuurega selle kolmnurga teiste külgede pikkuste ruutude ning nende teiste külgede pikkuste ja nende vahelise nurga koosinuse kahekordse korrutise vastandarvu summast. [@koossiinusteoreem]
-```
-
-```{r adding-vectors, fig.cap = "Jõuvektorite liitmine", fig.margin = TRUE}
-include_svg(file.path("töö-käik", "adding-vectors.svg"))
-```
-
-Joonisel \@ref(fig:adding-vectors) on esitatud vektorid
-$\overrightarrow{F}$ ja $\overrightarrow{Q}$, mis on liidetud vektoriks
-$\overrightarrow{R}$. Vektori $\overrightarrow{R}$ pikkuse saame
-arvutada nende liidetavate vektorite pikkuste ja nendevahelise nurga
-koosinuse abil, kui need vektorid eelnevalt üksteisele otsa järjestada
-geomeetriliselt. Lõik *AC* on sama pikk kui lõik *OB*, sest need on sama
-rööpküliku vastasküljed. Seega on $\overrightarrow{AC}$ sama mis
-$\overrightarrow{Q}$. Koosinusteoreemi rakendamiseks on vajalik kahe
-külje ja nende vahelise nurga suuruste teadmine. Kui see teadmine on
-olemas, saab arvutuse teostada. Kuna rööpküliku lähisnurkade summa on
-180°, siis valem summavektori pikkuse arvutamiseks on selline:
-
-```{=tex}
-\begin{flalign}
-|\overrightarrow{R}| & = \sqrt{|\overrightarrow{F}|^2 + |\overrightarrow{Q}|^2 - 2 \cdot |\overrightarrow{F}|^2 \cdot |\overrightarrow{Q}|^2 \cdot cos(180° - \alpha)} &\\
-& = \sqrt{|\overrightarrow{F}|^2 + |\overrightarrow{Q}|^2 + 2 \cdot |\overrightarrow{F}|^2 \cdot |\overrightarrow{Q}|^2 \cdot cos(\alpha)}
-(\#eq:cosine-theorem)
-\end{flalign}
-```
-Üks vektoriaalne suurus on gravitatsioonist tingitud standardkiirendus.
-Korduvates katsetes aastates 1995 - 2017 mõõdeti selleks Suurupis iga
-kord $9.8182 \cdot \frac{m}{s^2}$ [@oja2021absolute].
-
-```{r, echo=FALSE, results='asis'}
-#cat("\\twocolumn")
-```
-
-Kuigi selles raportis soovitakse näha nurki kraadides, on vaja R'i jaoks
-teisendada need arvutuste jaoks radiaanideks:
-
-$$nurk_{radiaanides} = \frac{nurk_{kraadides} \cdot \pi}{180}$$
-
-```{r, echo=FALSE, results='asis'}
-#cat("\\twocolumn")
-```
-
-## Töö sisu
-
-### Praktiline osa 1: Samas punktis rakendatud erisihiliste vektorite liitmisreegli katseline kinnitamine
-
-1.  Riputasime dünamomeetrite $D_1$ ja $D_2$ külge lõdvalt konksudega
-    kolmeharulise nööri (joonis \@ref(fig:setting-up-test-device)).
-
-2.  Nullisime dünamomeetrite näidud nende skaala pööramisega. Selleks
-    tuli skaalat hoidev kruvi dünamomeetri korpusel veidi lahti keerata
-    ja dünamomeetri väliskestale kinnitatud rõngast ümber dünamomeetri
-    keerata. Pärast nullimist tuli skaalat hoidev kruvi taas kinni
-    keerata. Huvitav asjaolu oli, et ühel dünamomeetril see kruvi mitte
-    isegi ei logisenud, vaid seda polnudki.
-
-3.  Vineerplaadile kinnitasime kinnitusnätsuga puhta valgevõitu
-    paberilehe *L*, mille vorming oli *A3*.
-
-4.  Alla rippuva nööri otsa riputasime raskuse, mille massi *m*
-    märkisime üles.
-
-    ```{r mass, attr.source = ".numberLines"}
-    m <- 1
+    ```{r second-experiment-lambda, attr.source = ".numberLines"}
+    lambda_eks <- ((t_1 - t_l) * (SPECIFIC_HEAT_CAPACITY_OF_WATER * m_v + k) + SPECIFIC_HEAT_CAPACITY_OF_WATER * m_ice * (TEMPERATURE_OF_FUSION_OF_ICE - t_l)) / m_ice
+    r <- abs(HEAT_OF_FUSION_OF_ICE - lambda_eks) / lambda_eks * 100
     ```
 
-5.  Märkisime paberilehele nööride lõikumispunkti *O* ja sellest
-    võimalikult kaugele iga nööri suunas ühe punkti *A*, *B* ja *C*.
-    Seda on hästi võimalik teha nööri varju järgi, kui suunata
-    paberilehele paralleelne valgusvoog. Mina seda meetodit siiski ei
-    kasutanud, kuna ei tulnud selle peale ega viitsinud nii palju lugeda
-    ka, vaid panin kirjutusvahendi vastu nööri ja märkisin punktid.
+    Hindasime katse läbiviimise korrektsust ning tulemuste täpsust. minu arvutatud jää sulamissoojus on $`r signif(lambda_eks, digits = 6)` \cdot \frac{J}{Kg}$. Teoses *Effect of temperature on the effective latent heat of fusion of ice in aqueous solutions* mainitu suhteline erinevus minu arvutatust on `r signif(r, digits = 5)`%. Saime ka Ristoga erinevad tulemused, mis tuleneb sellest, et mõõtsime erinevate termomeetritega ja arvestasime temperatuurinäite erinevalt. mulle on arusaamatu, miks me ei arvutanud jää soojendamissoojust.
 
-6.  Fikseerisime dünamomeetri näidud.
-
-    ```{r first-experiment-f-q, attr.source = ".numberLines"}
-    f <- 4
-    q <- 8
-    ```
-
-7.  Nautisime õhkkonda. (Juhendis on see punkt tühi.)
-
-8.  Eraldasime paberilehe vineerplaadilt ja ühendasime joonlaua abil
-    punktid *AO*, *BO* ja *CO*, st ühendasime joonlaua abil nööride
-    lõikumispunkti (jõudude rakenduspunkti) *O* punktidega *A*, *B* ja
-    *C*. Saime sirged, mis näitavad jõudude $\overrightarrow{F}$,
-    $\overrightarrow{Q}$ ja
-    $\overrightarrow{P} = m \cdot \overrightarrow{g}$ suunda.
-
-9.  Mõõtsime vektorite $\overrightarrow{F}$ ja $\overrightarrow{Q}$
-    vahelise nurga $\alpha$ malli abil.
-
-    ```{r alpha, attr.source = ".numberLines"}
-    alpha <- 68
-    ```
-
-10. Kordasime katset teistsuguse tasakaalustava jõu ja nurga $\alpha$
-    korral.
-
-    ```{r first-experiment-second-round, attr.source = ".numberLines"}
-    m <- c(m, 2)
-    f <- c(f, 8)
-    q <- c(q, 16)
-    alpha <- c(alpha, 59)
-    ```
-
-### Praktiline osa 2: Rööpsete jõudude liitmine
-
-1.  Panime dünamomeetri aasadest läbi raudvarva (joonis
-    \@ref(fig:schema-joining-parallel-forces)) ja nullisime
-    dünamomeetrite näidud.
-
-2.  Riputasime kahte kohta raudvarvale erinevad raskused ja kuigi
-    soovitati märkida viltpliiatsi või markeriga varvale nende
-    rakenduspunktid *A* ja *B*, tegutsesime hoopis vastupidi paigutades
-    raskused muude katsetajate poolt juba varasemalt tähistatud
-    kohtadesse.
-
-    ```{r m1-m2, attr.source = ".numberLines"}
-    m_1 <- 1
-    m_2 <- 3.0012
-    f_from_device <- 12
-    q_from_device <- 26
-    ```
-
-3.  Võtsime raskused varvalt maha, ühendasime need ja riputasime koos
-    varvale. Nihutasime raskust mööda varvast senikaua, kuni
-    dünamomeetrid näitasid endisi väärtusi. Sellega olime leidnud
-    resultantjõu rakenduspunkti *M*.
-
-4.  Mõõtsime joonlaua abil resultantjõu rakenduspunkti ja eelnevalt
-    varvale märgitud rööpjõudude rakenduspunktide vahelised kaugused
-    *AM* ja *BM*. Kandsime andmed tabelisse \@ref(tab:parallel-forces).
-
-    ```{r am-bm, attr.source = ".numberLines"}
-    am <- 17.3
-    bm <- 9.8
-    ```
-
-5.  Sooritasime kirjeldatud viisil veel teise katse kasutades selleks
-    teisi raskusi ning rakenduspunktide *A* ja *B* teisi asukohti.
-
-    ```{r second-experiment-second-round, attr.source = ".numberLines"}
-    m_1 <- c(m_1, .5)
-    m_2 <- c(m_2, 5)
-    f_from_device <- c(f_from_device, 12)
-    q_from_device <- c(q_from_device, 42)
-    am <- c(am, 27.1)
-    bm <- c(bm, 2.3)
-    ```
-
-6.  Katse lõpetades pidime kustutama varvalt vildika jooned ära, kuid me
-    ei teinud seda, kuna me ei teinud sinna ka tähistusi.
-
-## Andmete kogumise-salvestamise metoodika.
-
-Sisendandmed mõõtsime ja salvestasime käsitsi.
-
-```{r, echo=FALSE, results='asis'}
-#cat("\\onecolumn")
-```

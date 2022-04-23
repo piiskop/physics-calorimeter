@@ -95,7 +95,7 @@ millest saame
 
 ```{=tex}
 \begin{equation}
-\lambda = \frac{c \cdot m_{v} \cdot (T_1 - T_L) + K \cdot (T_1 - T_L)}{m_{jää}}.
+\lambda = \frac{(T_1 - T_L) \cdot (c \cdot m_{v} + K) + c \cdot m_{jää} \cdot (T_0 - T_L)}{m_{jää}}.
 (\#eq:heat-of-ice)
 \end{equation}
 ```

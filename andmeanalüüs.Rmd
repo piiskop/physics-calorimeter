@@ -19,7 +19,7 @@ Andmeanalüüs esimese praktilise osa kohta:
     \@ref(tab:comparing-theoretical-forces-to-actual-applied-to-same-point).
 
     ```{r p, attr.source = ".numberLines"}
-    p <- c(m[1] * g, m[2] * g)
+#    p <- c(m[1] * g, m[2] * g)
     ```
 
 2.  Valisin sobiva mastaabi $1 \cdot 10^{-2} \cdot m = 1 N$ ja kandsin
@@ -166,7 +166,7 @@ Andmeanalüüs esimese praktilise osa kohta:
     $R_{RP} = \frac{|R_{eksp} - P|}{R_{eksp}}$.
 
     ```{r relative_p, attr.source = ".numberLines"}
-    relative_difference_r_eksp_p = abs(r_eksp - p) / r_eksp
+#    relative_difference_r_eksp_p = abs(r_eksp - p) / r_eksp
     ```
 
 9.  Lasin koostada tabeli
